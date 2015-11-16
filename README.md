@@ -28,3 +28,11 @@ This makes the framework very convenient for parsing expression-based languages.
     * kalq1 ... simple calculator-based language
     * kalq2 ... kalq1 + simple programming language: if statements, function definition and invocation, support definition of new operators in the language
     * kalq3 ... as kalq2 but indendentation based
+
+### Author
+
+Jurij Mihelič
+University of Ljubljana
+Faculty of Computer and Information Science
+
+Anasy: Operator-precedence parsing of expression-based languages, 2014-2015
