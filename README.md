@@ -1,2 +1,2 @@
 # Anasy
-Operator-precedence parsing of expressions
+Operator-precedence parsing of expression-based languages.
