@@ -31,8 +31,8 @@ This makes the framework very convenient for parsing expression-based languages.
 
 ### Author
 
-Jurij Mihelič
-University of Ljubljana
+Jurij Mihelič<br>
+University of Ljubljana<br>
 Faculty of Computer and Information Science
 
 Anasy: Operator-precedence parsing of expression-based languages, 2014-2015
