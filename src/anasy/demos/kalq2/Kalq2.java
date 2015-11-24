@@ -14,6 +14,7 @@ public class Kalq2 {
             "fun fib(n) is if n <= 2 then 1 else fib(n-1) + fib(n-2) end end; prefix fib 100; fib 10",
             "15 % 10",
             "fun gcd(a, b) is if b == 0 then a else gcd(b, a % b) end end; gcd(15, 10)",
+            "fun gcd(a, b) is a if b == 0 else gcd(b, a % b) end; gcd(15, 10)",
             "fun gcd(a, b) is if b == 0 then a else gcd(b, a % b) end end; gcd(15, 10); infix gcd 40; 15 gcd 10",
     };
 

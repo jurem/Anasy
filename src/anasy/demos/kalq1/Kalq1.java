@@ -11,12 +11,14 @@ public class Kalq1 {
     public static String[] exprs = {
             "1*2+3",
             "1 + 2 * 3",
+            "(1 + 2) * 3",
             "42 + ;; comment\n 3 ;; another comment",
             "3! + 4!",
             " 2 ^ 5    /  4 % 5  * 10 + 3 * 2^2",
             "-3 + 10",
             "-4 - 6",
-            "4 < 5"
+            "4 < 5",
+            "-2 * (1 + 2 * 3) / -7 + 2^2! == -(7 + 3!) * -2"
     };
 
     public static void main(String[] args) throws SyntaxError {

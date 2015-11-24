@@ -1,10 +1,7 @@
 package anasy.demos.kalq1;
 
 import anasy.literals.RealNum;
-import anasy.operators.Infix;
-import anasy.operators.Postfix;
-import anasy.operators.Prefix;
-import anasy.operators.PrefixInfix;
+import anasy.operators.*;
 import anasy.parser.InteractiveParser;
 import anasy.whitespace.InlineComment;
 import anasy.whitespace.Whitespace;
@@ -30,6 +27,7 @@ public class Parser1 extends InteractiveParser<Double> {
     protected void init() {
         new Whitespace<Double>(this).setLevel(0);
         new InlineComment<Double>(this, ";;").setLevel(0);
+        new Outfix<Double>(this, "(", ")", 0);
 
         new RealNum<Double>(this, "<num>") {
             @Override
@@ -125,7 +123,7 @@ public class Parser1 extends InteractiveParser<Double> {
             }
         };
 
-        new Infix<Double>(this, "^", 70, true) {
+        new Infix<Double>(this, "^", 90, true) {
             @Override
             public Double makeInfixNode(Double left, Double right) {
                 return Math.pow(left, right);
